@@ -1,3 +1,8 @@
+
+# Important Note - 
+I have uploaded only one file to the drive: "Branch - CSE Semester - 3 Subject - Operating System." Therefore, only this file will be displayed.
+
+
 # Notes Fetcher Website
 
 This project is a Notes Fetcher Website built using Next.js.
