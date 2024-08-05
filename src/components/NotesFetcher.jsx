@@ -5,6 +5,13 @@ import { MainButton } from './Commons';
 
 
 
+const  getGoogleDriveFileId = (subject) => {  
+  const fileIds = {
+        "Operating Systems": '17-K42QZPFqXMAmuvT8OKjOxwri7ZFvpz',
+    }
+  return fileIds[subject] || '';
+  }
+  
 const NotesFetcher = () => {
   const [branch, setBranch] = useState('');
   const [semester, setSemester] = useState('');
@@ -27,12 +34,12 @@ const NotesFetcher = () => {
     }
   }, [branch, semester]);
 
- 
+  
   const handleFetchNotes = () => {
     if (branch && semester && subject) {
-
-      const pdfName = `${subject}.pdf`;
-      const pdfUrl = `/${pdfName}`;
+      const fileId = getGoogleDriveFileId(subject);
+  
+      const pdfUrl = `https://drive.google.com/file/d/${fileId}/preview`;
   
       setNoteUrl(pdfUrl);
     }
