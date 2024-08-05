@@ -4,11 +4,15 @@ This project is a Notes Fetcher Website built using Next.js.
 
 ## Website Link
 
-[Insert the website link here]
+https://notes-fetcher.vercel.app/
 
 ## Video
 
-[Insert the video link here]
+
+https://github.com/user-attachments/assets/8fda470b-e88d-4ba2-9f46-cda2c3a5f867
+
+
+
 
 ## Project Structure
 
